@@ -1,0 +1,99 @@
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 0 15px; /* Added padding to avoid content touching the edges on small screens */
+}
+
+/* Heading styling */
+.heading {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #007BFF;
+    text-align: center;
+}
+
+/* Card styling */
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 400px; /* Ensure the card doesn't grow too large */
+}
+
+/* Button styling */
+.button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 95%; /* Ensure the button doesn't grow too large */
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries for responsiveness */
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .button {
+        padding: 8px 16px;
+    }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .button {
+        padding: 9px 18px;
+    }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .button {
+        padding: 10px 20px;
+    }
+}

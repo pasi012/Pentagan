@@ -1,0 +1,99 @@
+/* General styles */
+.card {
+    width: 25%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 0 auto; /* Center the card */
+}
+
+.rateheading {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries for responsiveness */
+
+/* For small screens (like mobile devices) */
+@media screen and (max-width: 767px) {
+    .card {
+        width: 90%; /* Make the card take up most of the screen width on small devices */
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .form-group {
+        margin-bottom: 12px; /* Adjust spacing */
+    }
+
+    input {
+        font-size: 0.9rem; /* Smaller font size for inputs */
+        padding: 6px;
+    }
+
+    .button {
+        width: 100%; /* Make the button fill the width of the card */
+        padding: 12px;
+    }
+}
+
+/* For medium screens (like tablets) */
+@media screen and (max-width: 1023px) {
+    .card {
+        width: 60%; /* Make the card take up more space on medium devices */
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+/* For large screens (like desktops) */
+@media screen and (min-width: 1024px) {
+    .card {
+        width: 25%; /* Keep original width for large screens */
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+}
